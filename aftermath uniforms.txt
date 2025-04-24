@@ -1,0 +1,55 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ShoppingCart, Shirt, Shield, Briefcase, PencilRuler } from "lucide-react";
+
+export default function AftermathUniforms() {
+  return (
+    <div className="min-h-screen bg-white text-gray-800 p-6">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-blue-800 mb-2">Aftermath Uniforms</h1>
+        <p className="text-lg">Your One-Stop Shop for School Uniforms, Security Wear, Professional Attires & Stationeries</p>
+      </header>
+
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <Card className="shadow-lg">
+          <CardContent className="flex flex-col items-center p-4">
+            <Shirt className="h-10 w-10 text-blue-600 mb-2" />
+            <h2 className="text-xl font-semibold mb-2">School Uniforms</h2>
+            <p className="text-center text-sm">High-quality uniforms for students of all levels. Comfortable, durable, and stylish.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-lg">
+          <CardContent className="flex flex-col items-center p-4">
+            <Shield className="h-10 w-10 text-red-600 mb-2" />
+            <h2 className="text-xl font-semibold mb-2">Security Wear</h2>
+            <p className="text-center text-sm">Reliable uniforms for security personnel designed for both safety and presence.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-lg">
+          <CardContent className="flex flex-col items-center p-4">
+            <Briefcase className="h-10 w-10 text-green-600 mb-2" />
+            <h2 className="text-xl font-semibold mb-2">Professional Attires</h2>
+            <p className="text-center text-sm">Elegant and professional wear for corporate and business environments.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="shadow-lg">
+          <CardContent className="flex flex-col items-center p-4">
+            <PencilRuler className="h-10 w-10 text-yellow-600 mb-2" />
+            <h2 className="text-xl font-semibold mb-2">Stationeries</h2>
+            <p className="text-center text-sm">Everything you need from pens to paper — top-notch stationeries for all needs.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <div className="text-center">
+        <Button className="bg-blue-700 hover:bg-blue-800 text-white text-lg px-6 py-3">
+          <ShoppingCart className="mr-2" /> Shop Now
+        </Button>
+      </div>
+    </div>
+  );
+}
